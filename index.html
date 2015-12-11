@@ -1,0 +1,1021 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Weather Services for Sub-Saharan Africa" />
+<meta name="keywords" content="Weather, forecasting, agriculture, farming, smart"/>
+<meta name="author" content="Olivier Smeenk" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kukua Weather Services</title>
+
+<!-- =========================
+ FAV AND TOUCH ICONS  
+============================== -->
+<link rel="shortcut icon" href="images/icons/favicon.ico">
+<link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-touch-icon-114x114.png">
+
+<!-- =========================
+     STYLESHEETS      
+============================== -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/jquery.vegas.min.css">
+<link rel="stylesheet" href="css/animate.min.css">
+
+<link rel="stylesheet" href="assets/icon-fonts/styles.css"> 
+<link rel="stylesheet" href="css/pixeden-icons.css"> 
+
+<!-- CUSTOM STYLES -->
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<!-- WEBFONT -->
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Montserrat:700,400|Homemade+Apple' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+<!-- JQUERY -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+<script>
+	window.fbAsyncInit = function() {
+		FB.init({
+		appId      : '202272046777215',
+		xfbml      : true,
+		version    : 'v2.5'
+		});
+	};
+
+	(function(d, s, id){
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- =========================
+   PRE LOADER       
+============================== -->
+<div class="preloader">
+  <div class="status">&nbsp;</div>
+</div>
+<!-- =========================
+   HOME SECTION       
+============================== -->
+<header id="home" class="header">
+	
+	<!-- TOP BAR -->
+	<div id="main-nav" class="navbar navbar-inverse bs-docs-nav" role="banner">
+		<div class="container">
+			<div class="navbar-header responsive-logo">
+				<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<div class="navbar-brand">
+				<img src="images/logo.png" alt="Zerif">
+				</div>
+			</div>
+			<nav class="navbar-collapse collapse" role="navigation" id="bs-navbar-collapse">
+			<ul class="nav navbar-nav navbar-right responsive-nav main-nav-list">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#focus">Focus</a></li>
+				<li><a href="#video">Video</a></li>
+				<li><a href="#team">Team</a></li>
+				<li><a href="http://dashboard.kukua.cc">Login</a></li>
+				<!--
+				<li><a href="#pricingtable">Pricing</a></li>
+				
+				<li><a href="#testimonials">Testimonials</a></li>
+				<li><a href="#newsletter">Contact</a></li>
+				-->
+			</ul>
+			</nav>
+		</div>
+	</div>
+	<!-- / END TOP BAR -->
+	
+	<!-- BIG HEADING WITH CALL TO ACTION BUTTONS AND SHORT MESSAGES -->
+	<div class="container">
+		
+		<!-- HEADING -->
+		<h1 class="intro">Weather services for <br> African Farmers</h1>
+		
+		<!-- CALL TO ACTION BUTTONS -->
+		<div class="buttons inpage-scroll">
+			<a href="#video" class="btn btn-primary custom-button red-btn">The Video</a>
+			<!-- <a href="#pricingtable" class="btn btn-primary custom-button green-btn">Our Packages</a> -->
+		</div>
+		
+		<!-- 3 SHORT MESSAGE ABOUT COMPANY -->
+        <div class="row bottom-message-section">
+			<div class="col-lg-4 col-sm-4">
+				<div class="short-text">
+					<i class="icon icon-fontawesome-webfont-358"></i> Direct Improvements in Yield
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-4">
+				<div class="short-text">
+					<i class="icon-fontawesome-webfont-286"></i> Rapid Installation Service
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-4">
+				<div class="short-text">
+					<i class="icon-fontawesome-webfont-347"></i> Crop Insurance Opportunities
+				</div>
+			</div>
+		</div>
+	</div> <!-- / END BIG HEADING WITH CALL TO ACTION BUTTONS AND SHORT MESSAGES  -->
+	
+</header> <!-- / END HOME SECTION  -->
+
+<!-- =========================
+   FOCUS SECTION      
+============================== -->
+
+<section class="focus" id="focus">
+<div class="container">
+	
+	<!-- SECTION HEADER -->
+	<div class="section-header">
+		
+		<!-- SECTION TITLE -->
+		<h2 class="dark-text">Our Focus</h2>
+		
+		<!-- SHORT DESCRIPTION ABOUT THE SECTION -->
+		<h6>
+			These are the factors of the climate that our stations will monitor and send to the users.
+		</h6>
+	</div>
+	<!-- / END SECTION HEADER -->
+	
+	<!-- 4 FOCUS BOXES -->
+	<div class="row">
+		
+		<div class="col-lg-3 col-sm-3 focus-box red wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+			<div class="service-icon">
+				<i class="pixeden pd-icon-drop"></i> <!-- FOCUS ICON-->
+			</div>
+			<h5 class="red-border-bottom">Rain</h5> <!-- FOCUS HEADING -->
+			<p> <!-- FOCUS DESCRIPTION -->
+				 This is the most important factor. When combined with Satellite data we can make very accurate forecasts, as well as provide insurances.
+			</p>
+		</div>
+		
+		<div class="col-lg-3 col-sm-3 focus-box green wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+			<div class="service-icon">
+				<span class="pixeden pd-icon-statistics"></span>
+			</div>
+			<h5 class="green-border-bottom">Temp. &amp; Hum.</h5>
+			<p>
+				 Temperature and humidity measurements are highly valuable to knowing when to plant, water and fertilize your crops.
+			</p>
+		</div>
+		<div class="row">
+			<div class="fb-page"
+				data-tabs="timeline,messages"
+				data-href="https://www.facebook.com/kukuaweather" 
+				data-tabs="timeline" 
+				data-width="500" 
+				data-height="350" 
+				data-small-header="false" 
+				data-adapt-container-width="true" 
+				data-hide-cover="false" 
+				data-show-facepile="true">
+				<div class="fb-xfbml-parse-ignore">
+					<blockquote cite="https://www.facebook.com/kukuaweather">
+						<a href="https://www.facebook.com/Kukuaweather">Kukua Weather Services</a>
+					</blockquote>
+				</div>
+			</div>
+		</div>
+		<!--
+		<div class="col-lg-3 col-sm-3 focus-box blue wow fadeInRight animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+			<div class="service-icon">
+				<i class="pixeden pd-icon-arrows"></i>
+			</div>
+			<h5 class="blue-border-bottom">Solar Radiation</h5>
+			<p>
+				  To improve forecasts this factor is crucial. An additional benefit is that we can predict the type of sun protection required on a certain day.
+			</p>
+		</div>
+		
+		<div class="col-lg-3 col-sm-3 focus-box yellow wow fadeInRight animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+			<div class="service-icon">
+				<i class="pixeden pd-icon-compas"></i>
+			</div>
+			<h5 class="yellow-border-bottom">Barometric Pressure</h5>
+			<p>
+				 This factor can aid in predicting sudden changes in weather conditions, and will be recorded every 5 minutes for accuracy.
+			</p>
+		</div>
+	</div>
+		
+	-->
+	<!-- / END 4 FOCUS BOXES -->
+	
+	<!-- OTHER FOCUSES -->
+	<div class="other-focuses">
+		<h5><span class="section-footer-title">Our Partners</span></h5>
+	</div>
+	
+	<!-- OTHER FOCUS LIST -->
+	<div class="other-focus-list wow fadeInUp animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+		<ul>
+			<li><a href="http://www.foreca.com/"><img src="images/foreca.png"></a></li>
+			<li><a href="http://www.iita.org/"><img src="images/iita.png" ></a></li>
+			<li><a href="http://www.sodaq.com/"><img src="images/sodaq.jpg" ></a></li>
+		</ul>
+	</div> <!-- / END OTHER FOCUS LIST -->
+</div> <!-- / END CONTAINER -->
+</section>  <!-- / END FOCUS SECTION -->
+
+<!-- =========================
+   SEPARATOR    
+============================== -->
+
+<section class="separator-one">
+<div class="color-overlay">
+	<h3 class="container text wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+	<p> Our vision is to close Africa’s weather information gap by
+
+leveraging new weather station technology and mutually 
+
+beneficial partnerships. </p>
+
+<p>
+Our sustainable solution will provide accurate weather data 
+
+and forecasts to smallholder farmers, commercial farmers 
+
+and other <br> stakeholders throughout Africa.</p> </h3>
+</div>
+</section>  <!-- / END SEPARATOR -->
+
+<!-- 
+
+<section class="separator-one">
+<div class="color-overlay">
+	<h3 class="container text wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+	Key players in the industry are very positive about our service, see what they have to say. </h3>
+	<div class="wow fadeInRight animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+		<a href="#testimonials" class="btn btn-primary custom-button green-btn">TESTIMONIALS</a>
+	</div>
+</div>
+</section>   -->
+
+
+<!-- =========================
+   Video SECTION      
+============================== -->
+
+<section class="video" id="video">
+<div class="container">
+	
+	<!-- SECTION HEADER -->
+	<div class="section-header">
+		
+		<!-- SECTION TITLE -->
+		<h2 class="dark-text">Kukua Video</h2>
+		
+		<!-- SHORT DESCRIPTION ABOUT THE SECTION -->
+		<h6>
+			For a brief introduction to our model, take a look at this explanatory video.
+		</h6>
+	</div>
+	<!-- / END SECTION HEADER -->
+	<div class="row projects">
+	<div id="loader">
+	    <div class="loader-icon"></div>
+	</div>
+	<div class="col-md-12" id="portfolio-list">
+	<iframe width="800" height="450" src="https://www.youtube.com/embed/_a3uZDss__w" frameborder="0" allowfullscreen></iframe>
+</div>
+	
+</div> <!-- / END CONTAINER -->
+</section> <!-- / END WORKS SECTION -->
+
+<!-- =========================
+   STATS              
+============================== -->
+
+<section class="stats">
+	<div class="container">
+	    <!-- STATS -->
+	    <div class="row">
+	        
+	        <!-- START COLUMN -->
+	        <div class="col-lg-3 col-sm-3">
+	            <div class="stat wow fadeInUp animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+	                <div class="icon-top red-text">
+	                    <i class="icon-design-graphic-tablet-streamline-tablet"></i>
+	                </div>
+	                <div class="stat-text">
+	                <h3 class="white-text red-border-bottom">20</h3>
+	                <h6>Stations Installed</h6>
+	                </div>
+	            </div>
+	        </div> <!-- / END COLUMN -->
+	        
+	        <!-- START COLUMN -->
+	        <div class="col-lg-3 col-sm-3">
+	            <div class="stat wow fadeInUp animated" data-wow-offset="30" data-wow-duration="1.75s" data-wow-delay="0.30s">
+	                <div class="icon-top green-text">
+	                    <i class="icon-man-people-streamline-user"></i>
+	                </div>
+	                <div class="stat-text">
+	                <h3 class="white-text green-border-bottom">20</h3>
+	                <h6>People Mobilized</h6>
+	                </div>
+	            </div>
+	        </div> <!-- / END COLUMN -->
+	        
+	        <!-- START COLUMN -->
+	        <div class="col-lg-3 col-sm-3">
+	            <div class="stat wow fadeInUp animated" data-wow-offset="30" data-wow-duration="2s" data-wow-delay="0.45s">
+	                <div class="icon-top blue-text">
+	                    <i class="icon-email-mail-streamline"></i>
+	                </div>
+	                <div class="stat-text">
+	                <h3 class="white-text blue-border-bottom">35</h3>
+	                <h6>Stakeholders Contacted</h6>
+	                </div>
+	            </div>
+	        </div> <!-- / END COLUMN -->
+	        
+	        <!-- START COLUMN -->
+	        <div class="col-lg-3 col-sm-3">
+	            <div class="stat wow fadeInUp animated" data-wow-offset="30" data-wow-duration="2.25s" data-wow-delay="1s">
+	                <div class="icon-top yellow-text">
+	                    <i class="icon-picture-streamline-1"></i>
+	                </div>
+	                <div class="stat-text">
+	                <h3 class="white-text yellow-border-bottom">5</h3>
+	                <h6>Competitions Entered</h6>
+	                </div>
+	            </div>
+	        </div> <!-- / END COLUMN -->
+	    </div>
+</div>
+</section>  <!-- / END STATS -->
+
+<!-- =========================
+   OUR TEAM SECTION   
+============================== -->
+
+<section class="our-team" id="team">
+<div class="container">
+	
+	<!-- SECTION HEADER -->
+	<div class="section-header">
+		
+		<!-- SECTION TITLE -->
+		<h2 class="dark-text">Our Team</h2>
+		
+		<!-- SHORT DESCRIPTION ABOUT THE SECTION -->
+		<h6>
+			The superstars that will bring this innovative technology to those who need it most.
+		</h6>
+	</div>
+	<!-- / END SECTION HEADER -->
+	
+	<!-- TEAM MEMBERS -->
+	<div class="row wow fadeInRight animated" data-wow-offset="40" data-wow-duration="3s" data-wow-delay="0.15s">
+		<!-- MEMBER -->
+		<div class="col-lg-3 col-sm-3">
+			<div class="team-member">
+				<figure class="profile-pic"> 
+				<img src="images/team/pic1.jpg" alt=""> <!-- MEMBER PROFILE PIC -->
+				</figure>
+				<div class="member-details">
+					<h5 class="dark-text red-border-bottom">Tom Vanneste</h5>
+					<div class="position">
+						Revenue Officer
+					</div>
+				</div>
+				<div class="social-icons">
+					<ul>
+						<li><a href="https://www.linkedin.com/in/tomvanneste"><i class="icon-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<div class="details">
+					<p>
+						Tom was born in Rwanda. After his Masters of Economics, he became deputy director of the largest disability hospital in Africa. He then joined the M-Commerce team of Vodacom Tanzania. He is currently completing his MBA at LBS. 
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- / END MEMBER -->
+		
+		<div class="col-lg-3 col-sm-3">
+			<div class="team-member">
+				<figure class="profile-pic">
+				<img src="images/team/pic3.jpg" alt="">
+				</figure>
+				<div class="member-details">
+					<h5 class="dark-text green-border-bottom">Ollie Smeenk</h5>
+					<div class="position">
+						Product Officer
+					</div>
+				</div>
+				<div class="social-icons">
+					<ul>
+						<li><a href="https://www.facebook.com/olliesmeenk"><i class="icon-facebook"></i></a></li>
+						<li><a href="https://twitter.com/olliesmeenk"><i class="icon-twitter-alt"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/olliesmeenk/"><i class="icon-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<div class="details">
+					<p>
+						Ollie learned to speak kiswahili fluently in his youth. He ran a successful Kickstarter campaign for a microcontroller board he developed with Gregory Knauff, that would optimize remote sensor connectivity to the internet.
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-lg-3 col-sm-3">
+			<div class="team-member">
+				<figure class="profile-pic">
+				<img src="images/team/pic2.jpg" alt="">
+				</figure>
+				<div class="member-details">
+					<h5 class="dark-text yellow-border-bottom">Maurits van Mastrigt</h5>
+					<div class="position">
+						Back-end Developer
+					</div>
+				</div>
+				<div class="social-icons">
+					<ul>
+						<li><a href="https://nl.linkedin.com/in/mauritsvanmastrigt"><i class="icon-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<div class="details">
+					<p>
+						Maurits is a strong believer in the iterative development process. Time is a valuable resource and he can implement existing tools and build new ones. He is interested in entrepreneurship and an informatics background.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-lg-3 col-sm-3">
+			<div class="team-member">
+				<figure class="profile-pic">
+				<img src="images/team/pic5.jpg" alt="">
+				</figure>
+				<div class="member-details">
+					<h5 class="dark-text red-border-bottom">Siebren Kranenburg</h5>
+					<div class="position">
+						Front-end Developer
+					</div>
+				</div>
+				<div class="social-icons">
+					<ul>
+						<li><a href="https://nl.linkedin.com/in/skranenburg"><i class="icon-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<div class="details">
+					<p>
+						Siebren has a background in digital communications and has worked for multiple startups as a front-end developer. He is an avid learner and is building Kukua's first full-fledged user interface.
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-lg-3 col-sm-3">
+			<div class="team-member">
+				<figure class="profile-pic">
+				<img src="images/team/pic6.jpg" alt="">
+				</figure>
+				<div class="member-details">
+					<h5 class="dark-text green-border-bottom">Erik Börjesson</h5>
+					<div class="position">
+						Lead Designer
+					</div>
+				</div>
+				<div class="social-icons">
+					<ul>
+						<li><a href="https://nl.linkedin.com/in/erik-börjesson-04a503a5/en"><i class="icon-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<div class="details">
+					<p>
+						Erik has a unique skill set in design, as he can combine original drawings with design from example in a brilliant way. His background in communication and media enables him to build an amazing brand around Kukua.
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-lg-3 col-sm-3">
+			<div class="team-member">
+				<figure class="profile-pic">
+				<img src="images/team/pic4.jpg" alt="">
+				</figure>
+				<div class="member-details">
+					<h5 class="dark-text blue-border-bottom">JW Smeenk</h5>
+					<div class="position">
+						Technical Advisor
+					</div>
+				</div>
+				<div class="social-icons">
+					<ul>
+						<li><a href="https://www.linkedin.com/pub/jan-willem-smeenk/1/101/4b8"><i class="icon-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<div class="details">
+					<p>
+						Jan Willem comes from the Netherlands but spent 15 years in Tanzania. He is an engineer, programmer and Internet pioneer. As an avid traveller in 1993 he saw the need for online hotel reservations and founded Booking.com. 
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<!--
+		
+		<div class="col-lg-3 col-sm-3">
+			<div class="team-member">
+				<figure class="profile-pic">
+				<img src="images/team/pic7.jpg" alt="">
+				</figure>
+				<div class="member-details">
+					<h5 class="dark-text blue-border-bottom">Patrick Sanchez</h5>
+					<div class="position">
+						Business Development
+					</div>
+				</div>
+				<div class="social-icons">
+					<ul>
+						<li><a href=""><i class="icon-facebook"></i></a></li>
+						<li><a href=""><i class="icon-twitter-alt"></i></a></li>
+						<li><a href=""><i class="icon-behance"></i></a></li>
+						<li><a href=""><i class="icon-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<div class="details">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sapiente voluptate nostrum ipsa tempora optio facilis beatae quo aut error corrupti officiis dolore accusantium rem rerum illum nulla sed quisquam.
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-lg-3 col-sm-3">
+			<div class="team-member">
+				<figure class="profile-pic">
+				<img src="images/team/pic8.jpg" alt="">
+				</figure>
+				<div class="member-details">
+					<h5 class="dark-text yellow-border-bottom">Rachel Rogers</h5>
+					<div class="position">
+						Account Manager
+					</div>
+				</div>
+				<div class="social-icons">
+					<ul>
+						<li><a href=""><i class="icon-facebook"></i></a></li>
+						<li><a href=""><i class="icon-twitter-alt"></i></a></li>
+						<li><a href=""><i class="icon-behance"></i></a></li>
+						<li><a href=""><i class="icon-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<div class="details">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sapiente voluptate nostrum ipsa tempora optio facilis beatae quo aut error corrupti officiis dolore accusantium rem rerum illum nulla sed quisquam.
+					</p>
+				</div>
+			</div>
+		</div>
+		-->
+	</div> <!-- / END TEAM MEMBER LIST -->
+	
+</div> <!-- / END CONTAINER -->
+</section> <!-- / END OUR TEAM SECTION -->
+
+<!-- =========================
+   PACKAGES SECTION   
+============================== -->
+
+<!--
+
+<section class="packages" id="pricingtable">
+<div class="container">
+	-->
+	<!-- SECTION HEADER -->
+	<!--
+	<div class="section-header">
+		-->
+		<!-- SECTION TITLE -->
+		<!--
+		<h2 class="white-text">Farmer Packages</h2>
+		-->
+		<!-- SHORT DESCRIPTION ABOUT THE SECTION -->
+		<!--
+		<h6 class="white-text">
+			We have 4 standard weather forecast packages. One for smallholder farmers with just a simple mobile phone, and three for Commercial farmeres with a computer and internet connection. 
+		</h6>
+	</div>
+	-->
+	<!-- / END SECTION HEADER -->
+	
+	<!-- PACKAGES -->
+	<!--
+	<div class="row">
+		-->
+		<!-- FIRST PACKAGE -->
+		<!--
+		<div class="col-lg-3 col-sm-3">
+			<div class="package wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+				<div class="package-header green-bg">
+					<h5>Smallholder</h5>
+				</div>
+				<div class="price dark-bg">
+					<div class="price-container">
+					<h4><span class="dollar-sign">$</span>0.5</h4><span class="price-meta">
+					    / sms
+					</span>
+					</div>
+				</div>
+				<ul>
+					<li><i class="icon-check"></i>Current Forecasts</li>
+					<li><i class="icon-check"></i>Historical Data</li>
+					<li><i class="icon-cancel"></i>Real-Time Data</li>
+					<li><i class="icon-cancel"></i>Graphical Comparisons</li>
+					<li><i class="icon-cancel"></i>Own Station</li>
+				</ul>
+				<a href="#" class="btn btn-primary custom-button green-btn">
+				More Info </a>
+			</div>
+		</div> 
+		-->
+		<!-- / END FIRST PACKAGE -->
+		<!--
+		<div class="col-lg-3 col-sm-3">
+			<div class="package wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+				<div class="package-header brown-bg">
+					<h5>Small Commercial</h5>
+				</div>
+				<div class="price dark-bg">
+					<div class="price-container">
+					<h4><span class="dollar-sign">$</span>30 </h4>
+					<span class="price-meta">/ Mo</span>
+					</div>
+				</div>
+				<ul>
+					<li><i class="icon-check"></i>Current forecasts</li>
+					<li><i class="icon-check"></i>Historical Data</li>
+					<li><i class="icon-check"></i>Real-Time Data</li>
+					<li><i class="icon-check"></i>Graphical Comparisons</li>
+					<li><i class="icon-check"></i>1 Own Station</li>
+				</ul>
+				<a href="#" class="btn btn-primary custom-button brown-btn">
+				More Info </a>
+			</div>
+		</div>
+		<div class="col-lg-3 col-sm-3">
+			<div class="package wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+				<div class="package-header brown-bg">
+					<h5>Medium Commercial</h5>
+				</div>
+				<div class="price dark-bg">
+					<div class="price-container">
+					<h4><span class="dollar-sign">$</span>100</h4><span class="price-meta">
+					    / mo
+					</span>
+					</div>
+				</div>
+				<ul>
+					<li><i class="icon-check"></i>Current Forecasts</li>
+					<li><i class="icon-check"></i>Historical Data</li>
+					<li><i class="icon-check"></i>Real-Time Data</li>
+					<li><i class="icon-check"></i>Graphical Comparisons</li>
+					<li><i class="icon-check"></i>4 Own Stations</li>
+				</ul>
+				<a href="#" class="btn btn-primary custom-button brown-btn">
+				More Info </a>
+			</div>
+		</div>
+		
+		<div class="col-lg-3 col-sm-3">
+			<div class="package wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+				<div class="package-header brown-bg">
+					<h5>Large Commercial</h5>
+				</div>
+				<div class="price dark-bg">
+					<div class="price-container">
+					<h4><span class="dollar-sign">$</span> 250 </h4>
+					<span class="price-meta">/ Mo</span>
+					</div>
+				</div>
+				<ul>
+					<li><i class="icon-check"></i>Current forecasts</li>
+					<li><i class="icon-check"></i>Historical Data</li>
+					<li><i class="icon-check"></i>Real-Time Data</li>
+					<li><i class="icon-check"></i>Graphical Comparisons</li>
+					<li><i class="icon-check"></i>10 Own Stations</li>
+				</ul>
+				<a href="#" class="btn btn-primary custom-button brown-btn">
+				More Info </a>
+			</div>
+		</div>
+	</div> 
+	-->
+	<!-- / END PACKAGES -->
+	<!--
+</div> --> <!--END CONTAINER  -->
+<!-- </section> --><!-- END PACKAGES SECTION -->
+
+
+
+
+<!-- =========================
+   TESTIMONIALS        
+============================== -->
+<!--
+<section class="testimonial" id="testimonials">
+<div class="container">
+
+        <div class="section-header">
+		
+		<h2 class="white-text">Testimonials</h2>
+		
+		<h6 class="white-text">
+			We have interviewed a wide range of stakeholders. See what they all say about the relevance of our service. 
+		</h6>
+	</div>
+
+
+	<div class="row wow fadeInRight animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+		<div class="col-md-12">
+			<div id="client-feedbacks" class="owl-carousel owl-theme">
+				
+				<div class="feedback-box">
+					
+					<div class="message">
+										“For thousands of years the rainy seasons have been predictable.
+ Because the climate is changing, the rainy seasons are starting at 
+different times and lasting for different lengths and intensities. This is causing farmers significant problems. 
+Weather forecasts in Tanzania are not localized, and the information is not getting to farmers as it remains trapped in Dar Es Salaam.”
+		</div>
+					
+					<div class="client">
+						<div class="quote red-text">
+							<i class="icon-fontawesome-webfont-294"></i>
+						</div>
+						<div class="client-info">
+							<a class="client-name" href="">Tim Donovan</a> 
+							<div class="client-company">
+								 Sr. Manager, UK Met Office
+							</div>
+						</div>
+						<div class="client-image hidden-xs">
+							<img src="images/clients-pic/1.jpg" alt="">
+						</div>
+					</div> 
+				</div> 
+				
+				<div class="feedback-box">
+					<div class="message">
+“The lack of weather stations is hampering the sale of crop insurances. Any of the companies in the
+
+agricultural value chain could buy forecast data or predictive models (e.g. seed companies, fertilizer 
+
+companies, food processors, etc.). Seven years ago we realized the lack of data was a problem but 
+
+no one has done anything so we are still at the same spot.”					</div>
+					<div class="client">
+						<div class="quote green-text">
+							<i class="icon-fontawesome-webfont-294"></i>
+						</div>
+						<div class="client-info">
+							<a class="client-name" href="">Lovemore Forichi</a>
+							<div class="client-company">
+								 VP, Swiss Reinsurance Co.
+							</div>
+						</div>
+						<div class="client-image hidden-xs">
+							<img src="images/clients-pic/2.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				
+				<div class="feedback-box">
+					<div class="message">
+“Any weather stations in Africa are great!  As I'm sure you are aware, weather data is sparse in Africa and we
+
+will take what we can get. Yes, if you push the data to Weather Underground, you will be improving the 
+
+forecasts for that area.  The forecast model that we have created takes current conditions from each station 
+
+and works that data into the model - extrapolating the conditions into the future."					</div>
+					<div class="client">
+						<div class="quote green-text">
+							<i class="icon-fontawesome-webfont-294"></i>
+						</div>
+						<div class="client-info">
+							<a class="client-name" href="">Kari Strenfel</a>
+							<div class="client-company">
+								 Meteorologist, W.U.
+							</div>
+						</div>
+						<div class="client-image hidden-xs">
+							<img src="images/clients-pic/5.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				
+
+<div class="feedback-box">
+					<div class="message">
+“The main challenge is power provision to current stations. The stations are designed to use solar power
+
+provided through the solar panels and/or batteries, which run for a couple of months and are very expensive. 
+
+We have had a wave of solar panel vandalisation, which has made our cost go up significantly.”								</div>
+					<div class="client">
+						<div class="quote blue-text">
+							<i class="icon-fontawesome-webfont-294"></i>
+						</div>
+						<div class="client-info">
+							<a class="client-name" href="">Joseph Ndungu</a>
+							<div class="client-company">
+								 Manager Acre Africa
+							</div>
+						</div>
+						<div class="client-image hidden-xs">
+							<img src="images/clients-pic/3.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				
+				<div class="feedback-box">
+					<div class="message">
+"We have some hypotheses that more information is better for planning purposes, especially around 
+
+fertilizer/pesticide and harvesting. I think it makes total sense to dovetail the installation of weather 
+
+stations into an existing agricultural extension project since weather is just one type of information that farmers 
+
+need."					</div>
+					<div class="client">
+						<div class="quote red-text">
+							<i class="icon-fontawesome-webfont-294"></i>
+						</div>
+						<div class="client-info">
+							<a class="client-name" href="">Drew Johnson</a>
+							<div class="client-company">
+								 Program Mgr., Technoserve
+							</div>
+						</div>
+						<div class="client-image hidden-xs">
+							<img src="images/clients-pic/4.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="feedback-box">
+					<div class="message">
+“The key benefit we could provide to farmers is improving the accuracy of seasonal forecasting. When
+
+will the rain season start and end? Expected amount of rain? Distribution of rainfall? With the above 
+
+information, farmers can make important decisions about what to plant, when to plant, and how to plant (ie 
+
+fertilizers & pesticide).”					</div>
+					<div class="client">
+						<div class="quote blue-text">
+							<i class="icon-fontawesome-webfont-294"></i>
+						</div>
+						<div class="client-info">
+							<a class="client-name" href="">Siza Tumbo</a>
+							<div class="client-company">
+								 Sokoine University
+							</div>
+						</div>
+						<div class="client-image hidden-xs">
+							<img src="images/clients-pic/6.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+</div>
+</section> 
+-->
+<section class="testimonial" id="testimonials">
+<div class="container">
+		<h6 class="white-text">
+			Kukua is part of the EU-funded IMPACT Accelerator. Participating the accelerator are multiple startups in the mobile industry. The Project has received funding from 
+
+the European Union Seventh Framework 
+
+Programme under grant agreement n° 
+
+632828
+		</h6>
+	</div>
+	<div class="other-focus-list wow fadeInUp animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+		<ul>
+			<li>
+				<div class="client-feedbacks feedback-box">
+					<a href="http://www.impact-accelerator.com/"><img src="images/impact.png"></a>
+				</div>
+			</li>
+			<li>
+				<div class="feedback-box">
+					<a href="https://ec.europa.eu/research/fp7/index_en.cfm"><img src="images/eu.jpg" ></a>
+				</div>
+			</li>
+		</ul>
+	</div> 
+	
+</div>
+</section> 
+
+<!-- =========================
+   NEWSETTER          
+============================== -->
+<!--
+<section class="newsletter" id="newsletter">
+<div class="container">
+	<h3 class="white-text wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">Stay in touch</h3> 
+	<div class="sub-heading white-text wow fadeInRight animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+		 Sign Up for Email Updates on on News &amp; Offers
+	</div> 
+	
+	<form action="#" class="subscription wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" role="form">
+		<input type="email" placeholder="Enter email" class="form-control input-box">
+		<button class="btn btn-primary custom-button red-btn">Sign Up</button>
+	</form>
+	
+</div>
+</section> 
+-->
+<!-- =========================
+   FOOTER             
+============================== -->
+
+<footer>
+<div class="container">
+	
+	<!-- COMPANY ADDRESS-->
+	<div class="col-md-5 company-details">
+		<div class="icon-top red-text">
+		    <i class="icon-fontawesome-webfont-302"></i>
+		</div>
+		Marathon 1, 1213 PA Hilversum, The Netherlands
+	</div>
+	
+	<!-- COMPANY EMAIL-->
+	<div class="col-md-2 company-details">
+		<div class="icon-top green-text">
+		<i class="icon-fontawesome-webfont-329"></i>
+		</div>
+		 info@kukua.cc
+	</div>
+	
+	<!-- COMPANY PHONE NUMBER -->
+	<div class="col-md-2 company-details">
+		<div class="icon-top blue-text">
+		<i class="icon-fontawesome-webfont-101"></i>
+		</div>
+		+31637568971
+	</div>
+	
+	<!-- SOCIAL ICON AND COPYRIGHT -->
+	<div class="col-lg-3 col-sm-3 copyright">
+		<ul class="social">
+			<li><a href="https://www.facebook.com/kukuaweather"><i class="icon-facebook"></i></a></li>
+		</ul>
+		 ©2015 Kukua BV
+	</div>
+</div> <!-- / END CONTAINER -->
+</footer> <!-- / END FOOOTER  -->
+
+<!-- SCRIPTS -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/jquery.knob.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.vegas.min.js"></script>
+<script src="js/zerif.js"></script>
+
+
+</body>
+</html>
