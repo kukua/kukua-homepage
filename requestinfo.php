@@ -80,7 +80,7 @@
 							<input type="email" name="email" class="input-lg form-control" placeholder="e-mail address">
 
 							<label class="sr-only" for="exampleInputEmail3">Request</label>
-							<input type="submit" value="Request info" class="btn red-btn btn-lg btn-block" onclick="ga('send', 'event', { eventCategory: 'Signup', eventAction: 'Information request', eventLabel: 'Signup'});" >
+							<input type="submit" value="Request info" class="btn green-btn btn-lg btn-block" onclick="ga('send', 'event', { eventCategory: 'Signup', eventAction: 'Information request', eventLabel: 'Signup'});" >
 						</form>
 					</div>
 				</div>
