@@ -24,6 +24,14 @@
 		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Montserrat:700,400|Homemade+Apple' rel='stylesheet' type='text/css'>
 	</head>
 	<body class="full-page">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-64064681-2', 'auto');
+			ga('send', 'pageview');
+		</script>
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
@@ -64,15 +72,15 @@
 							<div class="alert alert-success"><?=$_SESSION["success"]; ?></div>
 						<?php endif; ?>
 
-						<form class="form" method="post" action="/sendmail.php">
+						<form class="form" method="post" action="/requestinfo">
 							<label class="sr-only" for="exampleInputEmail3">Your name</label>
 							<input type="text" name="name" class="input-lg form-control" placeholder="Your name">
 
 							<label class="sr-only" for="exampleInputEmail3">Email address</label>
 							<input type="email" name="email" class="input-lg form-control" placeholder="e-mail address">
 
-							<label class="sr-only" for="exampleInputEmail3">Sign up</label>
-							<input type="submit" value="Sign up" class="btn red-btn btn-lg btn-block" onclick="ga('send', 'event', { eventCategory: 'Signup', eventAction: 'Information request', eventLabel: 'Signup'});" >
+							<label class="sr-only" for="exampleInputEmail3">Request</label>
+							<input type="submit" value="Request info" class="btn red-btn btn-lg btn-block" onclick="ga('send', 'event', { eventCategory: 'Signup', eventAction: 'Information request', eventLabel: 'Signup'});" >
 						</form>
 					</div>
 				</div>

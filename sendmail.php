@@ -30,13 +30,22 @@ if ($validEmail && $validName) {
 	$message[] = "Hi there!<br>";
 	$message[] = "This person signed up:<br><br>";
 	$message[] = "Name: " . $name;
-	$message[] = "Email: "  . $email;
+	$message[] = "<br>Email: "  . $email;
 
-	if (mail("siebren@kukua.cc", "Signup from website", implode($message, "\r\n"), "From: " . $email)) {
-		$_SESSION["success"] = "Thanks for signing up!";
+	$headers[] = "From: www.kukua.cc <info@kukua.cc>";
+	$headers[] = "Reply-To: " . $email;
+	$headers[] = "Return-Path: Mail-Error <siebren@kukua.cc>";
+	$headers[] = "X-Mailer: PHP/" . phpversion();
+	$headers[] = "X-Priority: Normal";
+	$headers[] = "MIME-Version: 1.0";
+	$headers[] = "Content-type: text/html; charset=iso-8859-1";
+
+	if (mail("info@kukua.cc", "Signup from website", implode("\r\n", $message), implode("\r\n", $headers))) {
+		$_SESSION["success"] = "We will send you some info soon!";
 		header("Location: /requestinfo");
 		exit;
 	}
+
 	$_SESSION["error"] = "Something went wrong!";
 	header("Location: /requestinfo");
 	exit;
