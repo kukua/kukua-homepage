@@ -8,8 +8,8 @@ GLOBAL STYLES
 =========================================
 -----------------------------------------*/
 
+
 html {
-    
     font-size: 100%;        
 }
 
@@ -21,6 +21,27 @@ body {
 	overflow-x: hidden !important;
 	line-height: 25px;
 	text-align: center;
+}
+
+html.signup {
+	height:100%;
+}
+body.full-page {
+	background-image: url("../images/backgrounds/bg1.jpg");
+	background-size: cover;
+	height:100%;
+}
+body.full-page .header {
+	height:100%;
+}
+body.full-page .header h1.intro small {
+	color: #ccc;
+}
+body.full-page .row-spacing {
+	margin-bottom: 60px;
+}
+body.full-page .form-control {
+	margin-bottom: 2px;
 }
 
 /* Internet Explorer 10 in Windows 8 and Windows Phone 8 Bug fix */
@@ -338,19 +359,6 @@ h6 {
 	border-radius: 4px;
 	background: rgba(255,255,255, 0.95);
 }
- textarea:hover, 
-input:hover, 
-textarea:active, 
-input:active, 
-textarea:focus, 
-input:focus {
-    outline: 1 !important;
-    outline-color: #e96656 !important;
-    -webkit-appearance:none;
-        border:none !important;
-  -webkit-box-shadow:none !important;
-          box-shadow:none !important;
-        }
 
 /*---------------------------------------
  **   SECTION HEADERS                -----
