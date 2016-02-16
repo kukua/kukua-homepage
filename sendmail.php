@@ -1,7 +1,10 @@
 <?php
 session_start();
 
-function isValidEmail($email) { 
+function e ($val) {
+	return htmlspecialchars($val, ENT_NO_QUOTES, 'UTF-8');
+}
+function isValidEmail ($email) {
 	return filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
 }
 
@@ -12,10 +15,10 @@ if ($validEmail && $validName) {
 	$rawEmail = $_POST["email"];
 	$rawName  = $_POST["name"];
 
-	$email = strip_tags($rawEmail);
-	$name  = strip_tags($rawName);
+	$email = e($rawEmail);
+	$name  = e($rawName);
 
-	if (!isValidEmail($email)) {
+	if ( ! isValidEmail($email)) {
 		$_SESSION["error"] = "No valid e-mail address supplied";
 		header("Location: /requestinfo");
 		exit;
