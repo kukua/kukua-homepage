@@ -72,7 +72,7 @@
 							<div class="alert alert-success"><?=$_SESSION["success"]; ?></div>
 						<?php endif; ?>
 
-						<form class="form" method="post" action="/requestinfo">
+						<form class="form" method="post" action="/requestinfo/index.php">
 							<label class="sr-only" for="exampleInputEmail3">Your name</label>
 							<input type="text" name="name" class="input-lg form-control" placeholder="Your name">
 

@@ -1,9 +1,10 @@
 <?php
 session_start();
 
-function e ($val) {
-	return htmlspecialchars($val, ENT_NO_QUOTES, 'UTF-8');
-}
+require(".env");
+require("vendor/autoload.php");
+require("classes/Email.php");
+
 function isValidEmail ($email) {
 	return filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
 }
@@ -15,8 +16,8 @@ if ($validEmail && $validName) {
 	$rawEmail = $_POST["email"];
 	$rawName  = $_POST["name"];
 
-	$email = e($rawEmail);
-	$name  = e($rawName);
+	$email = strip_tags($rawEmail);
+	$name  = strip_tags($rawName);
 
 	if ( ! isValidEmail($email)) {
 		$_SESSION["error"] = "No valid e-mail address supplied";
@@ -31,25 +32,24 @@ if ($validEmail && $validName) {
 	}
 
 	$message[] = "Hi there!<br>";
-	$message[] = "This person signed up:<br><br>";
+	$message[] = "This person requested info:<br><br>";
 	$message[] = "Name: " . $name;
 	$message[] = "<br>Email: "  . $email;
 
-	$headers[] = "From: www.kukua.cc <info@kukua.cc>";
-	$headers[] = "Reply-To: " . $email;
-	$headers[] = "Return-Path: Mail-Error <siebren@kukua.cc>";
-	$headers[] = "X-Mailer: PHP/" . phpversion();
-	$headers[] = "X-Priority: Normal";
-	$headers[] = "MIME-Version: 1.0";
-	$headers[] = "Content-type: text/html; charset=iso-8859-1";
+	$lib = new Email();
+	$lib->setFrom($email);
+	$lib->setTo("Kukua B.V. <info@kukua.cc>");
+	$lib->setSubject("Request from website");
+	$lib->setContent(implode("\r\n", $message));
 
-	if (mail("info@kukua.cc", "Signup from website", implode("\r\n", $message), implode("\r\n", $headers))) {
-		$_SESSION["success"] = "We will send you some info soon!";
+	try {
+		$lib->send();
+		$_SESSION["success"] = "We will send you more info asap!";
+		header("Location: /requestinfo");
+		exit;
+	} catch (Exception $e) {
+		$_SESSION["error"] = "Something went wrong, please try agian.";
 		header("Location: /requestinfo");
 		exit;
 	}
-
-	$_SESSION["error"] = "Something went wrong!";
-	header("Location: /requestinfo");
-	exit;
 }
