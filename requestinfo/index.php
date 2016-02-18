@@ -1,4 +1,4 @@
-<?php require_once("sendmail.php"); ?>
+<?php require_once("../sendmail.php"); ?>
 
 <!DOCTYPE html>
 <html lang="en" class="signup">
