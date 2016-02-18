@@ -7,18 +7,18 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Kukua Weather services</title>
 
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/owl.theme.css">
-		<link rel="stylesheet" href="css/owl.carousel.css">
-		<link rel="stylesheet" href="css/jquery.vegas.min.css">
-		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/owl.theme.css">
+		<link rel="stylesheet" href="../css/owl.carousel.css">
+		<link rel="stylesheet" href="../css/jquery.vegas.min.css">
+		<link rel="stylesheet" href="../css/animate.min.css">
 		
-		<link rel="stylesheet" href="assets/icon-fonts/styles.css"> 
-		<link rel="stylesheet" href="css/pixeden-icons.css"> 
+		<link rel="stylesheet" href="../assets/icon-fonts/styles.css"> 
+		<link rel="stylesheet" href="../css/pixeden-icons.css"> 
 		
 		<!-- CUSTOM STYLES -->
-		<link rel="stylesheet" href="css/styles.css">
-		<link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="../css/styles.css">
+		<link rel="stylesheet" href="../css/responsive.css">
 
 		<!-- WEBFONT -->
 		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Montserrat:700,400|Homemade+Apple' rel='stylesheet' type='text/css'>
@@ -42,7 +42,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="/" title="Home">
-						<img src="images/logo.png" alt="Kukua Weather services">
+						<img src="../images/logo.png" alt="Kukua Weather services">
 					</a>
 				</div>
 				<div id="navbar" class="collapse navbar-collapse">
