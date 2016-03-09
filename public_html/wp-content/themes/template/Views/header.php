@@ -9,7 +9,7 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -28,23 +28,3 @@
 			<?= \Template\Settings\Menu::render("header-menu"); ?>
 		</div>
 	</nav>
-
-	<?php
-		$image = $header->getImage();
-		$backgroundCss = "background-image:
-			linear-gradient(
-				rgba(29, 29, 29, 0.6),
-				rgba(29, 29, 29, 0.3)
-			),
-			url('" . $image["url"] . "');";
-	?>
-	<div class="header" style="<?= $backgroundCss; ?>">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<h1 class="text-center"><?= $header->getTitle() ?></h1>
-					<p class="text-center lead"><?= $header->getSubtitle() ?></p>
-				</div>
-			</div>
-		</div>
-	</div>

@@ -23,9 +23,10 @@ namespace Template\Settings;
 class Constants {
 
     /* Directories */
-    const DIR_ASSETS = "/wp-content/themes/template/assets";
-    const DIR_VIEWS  = "/wp-content/themes/template/Views";
-    const DIR_BASE   = "/wp-content/themes/template";
+    const DIR_ASSETS	= "/wp-content/themes/template/assets";
+	const DIR_VIEWS		= "/wp-content/themes/template/Views";
+	const DIR_PARTIALS	= "/Views/partials";
+    const DIR_BASE		= "/wp-content/themes/template";
 
     const DIR_VIEWS_ADMIN = "wp-content/themes/template/Views/Admin";
 }

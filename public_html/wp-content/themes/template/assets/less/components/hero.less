@@ -1,0 +1,24 @@
+.hero {
+	background-size: cover;
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	border-bottom: 4px;
+	border-bottom-style: solid;
+	border-color: inherit;
+	h1 {
+		font-weight: 700;
+		text-transform: uppercase;
+		color: @light-color;
+		.text-center();
+	}
+	p,a {
+		color: @light-color;
+		.text-center();
+	}
+	&.small {
+		padding: @spacing 0;
+	}
+	&.large {
+		padding: @spacing-double 0;
+	}
+}

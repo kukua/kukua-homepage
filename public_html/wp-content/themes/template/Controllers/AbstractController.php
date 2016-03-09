@@ -36,7 +36,6 @@ class AbstractController {
     public function __construct() {
         $this->_viewPaths();
 		$this->_defineTitle();
-		$this->_header();
 		$this->_footer();
     }
 
@@ -96,17 +95,6 @@ class AbstractController {
         $this->data["base"]   = Constants::DIR_BASE;
         $this->data["assets"] = Constants::DIR_ASSETS;
         $this->data["views"]  = Constants::DIR_VIEWS;
-	}
-
-	/**
-	 * Set header variable
-	 *
-	 * @access protected
-	 * @return void
-	 */
-	protected function _header() {
-        $header = new \Template\Settings\Header();
-        $this->data["header"] = $header;
 	}
 
 	/**

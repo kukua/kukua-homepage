@@ -26,6 +26,11 @@ class Footer {
 	protected $_street;
 	protected $_postalcode;
 	protected $_city;
+	protected $_email;
+	protected $_phone_number;
+	protected $_facebook;
+	protected $_twitter;
+	protected $_linkedin;
 
 	/**
 	 * Class constructor
@@ -35,7 +40,15 @@ class Footer {
 	 */
 	public function __construct() {
 
-		$this->_title	= get_option("template_footer_title");
+		$this->_title		= get_option("template_footer_title");
+		$this->_street		= get_field("street", "option");
+		$this->_postalcode	= get_field("postalcode", "option");
+		$this->_city		= get_field("city", "option");
+		$this->_email		= get_field("email", "option");
+		$this->_phone_number= get_field("phone_number", "option");
+		$this->_facebook	= get_field("facebook", "option");
+		$this->_twitter		= get_field("twitter", "option");
+		$this->_linkedin	= get_field("linkedin", "option");
 
 		//check if saving, before any output started so we can redirect
 		if (isset($_POST["update_appearance_footer"])) {
@@ -45,6 +58,7 @@ class Footer {
 			}
 		}
 
+		$this->_street = get_field("street", "option");
 		add_action("admin_menu", array($this, "adminMenu"));
 	}
 
@@ -86,6 +100,53 @@ class Footer {
 	 */
 	public function getCity() {
 		return $this->_city;
+	}
+
+	/**
+	 * Return e-mail address
+	 *
+	 * @access public
+	 * @return string
+	 */
+	public function getEmail() {
+		return $this->_email;
+	}
+	/**
+	 * Return phone number
+	 *
+	 * @access public
+	 * @return string
+	 */
+	public function getPhoneNumber() {
+		return $this->_phone_number;
+	}
+
+	/**
+	 * Return facebook account url
+	 *
+	 * @access public
+	 * @return string
+	 */
+	public function getFacebook() {
+		return $this->_facebook;
+	}
+	/**
+	 * Return twitter account url
+	 *
+	 * @access public
+	 * @return string
+	 */
+	public function getTwitter() {
+		return $this->_twitter;
+	}
+	/**
+	 * Return linked in account url
+	 *
+	 * @access public
+	 * @return string
+	 */
+	public function getLinkedin() {
+		return $this->_linkedin;
 	}
 
 	/**
