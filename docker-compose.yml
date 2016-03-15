@@ -34,6 +34,6 @@ phpmyadmin:
     container_name: web_myadmin
     env_file: .env
     ports:
-        - "8080:8080"
+        - "8080:80"
     links:
         - mysql

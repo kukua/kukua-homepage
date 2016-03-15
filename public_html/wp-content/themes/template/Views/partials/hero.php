@@ -4,10 +4,6 @@
 $backgroundCss = "";
 if ($image):
 	$backgroundCss = "background-image:
-		linear-gradient(
-			rgba(29, 29, 29, 0.6),
-			rgba(29, 29, 29, 0.3)
-		),
 		url('" . $image["url"] . "');";
 endif; ?>
 

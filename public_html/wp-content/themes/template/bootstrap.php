@@ -60,6 +60,7 @@ class Init {
 	 */
     public function initWordPress() {
 		(new \Template\Settings\Defaults());
+		(new \Template\Settings\Menu());
 		(new \Template\Settings\Footer());
     }
 }

@@ -31,7 +31,7 @@ class Menu {
 	public function __construct() {
 
 		/* Register header menu */
-		add_action("after_setup_theme", function() {
+		add_action("init", function() {
 			register_nav_menu(
 				"header-menu", __("Header menu")
 			);
