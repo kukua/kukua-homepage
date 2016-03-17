@@ -53,6 +53,9 @@ class Blog extends AbstractController {
 	 * @return void
 	 */
 	public function single() {
+		the_post();
+		$post = get_post();
+		$this->data["article"] = Article::find($post->ID);
 		$this->render("blog/single", $this->data);
 	}
 }

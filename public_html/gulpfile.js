@@ -23,7 +23,7 @@ var js_script_path  = root + '/assets/js/';
 var js_files = [
     js_plugin_path + 'jquery/dist/jquery.js',
     js_plugin_path + 'bootstrap/dist/js/bootstrap.js',
-    js_plugin_path + 'matchHeight/jquery.matchHeight.js',
+    js_plugin_path + 'matchHeight/dist/jquery.matchHeight.js',
 
     js_script_path + 'disable-noconflict.js',
     js_script_path + 'default.js'

@@ -16,7 +16,8 @@
                 "id": ""
             },
             "choices": {
-                "primary": "Green"
+                "primary": "Green",
+                "secondary": "Blue"
             },
             "default_value": [],
             "allow_null": 0,
@@ -952,5 +953,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1458057586
+    "modified": 1458210424
 }

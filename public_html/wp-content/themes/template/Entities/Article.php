@@ -26,19 +26,38 @@ use \Template\Settings\Constants;
 class Article {
 
 	public $title;
+	public $subtitle;
 	public $content;
 	public $excerpt;
 	public $link;
+	public $image;
 
 	/**
 	 * Populate object
 	 */
 	public function populate($wpQuery) {
 		$this->title   = apply_filters("the_title", $wpQuery->post_title);
+		$this->subtitle= get_field("article_subtitle", $wpQuery->ID);
 		$this->content = apply_filters("the_content", $wpQuery->post_content);
-		$this->content = wp_trim_words($wpQuery->post_content);
+		$this->excerpt = wp_trim_words($wpQuery->post_content);
 		$this->link	   = get_the_permalink($wpQuery->ID);
+		$this->image   = get_field("article_image", $wpQuery->ID);
 		return $this;
+	}
+
+	/**
+	 * Get a single article
+	 */
+	public static function find($id) {
+		$args = [
+			'p'			=> $id,
+			'post_type' => 'post'
+		];
+		$query = new \WP_Query($args);
+
+		$article = new Article();
+		$article->populate($query->posts[0]);
+		return $article;
 	}
 
 	/**
@@ -47,7 +66,7 @@ class Article {
 	 * @access public
 	 * @return void
 	 */
-	public function load() {
+	public static function load() {
 		$args = [
 			'post_type' => 'post'
 		];

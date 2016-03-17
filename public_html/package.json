@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "gulp": "3.8.9",
+    "gulp": "^3.9.1",
     "gulp-concat": "2.4.1",
     "gulp-ignore": "1.2.0",
     "gulp-less": "1.3.6",
