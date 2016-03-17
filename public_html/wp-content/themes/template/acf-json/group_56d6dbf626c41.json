@@ -927,6 +927,13 @@
                 "operator": "==",
                 "value": "Routes\/dynamic.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "Routes\/blog.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -945,5 +952,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1458054190
+    "modified": 1458057586
 }
