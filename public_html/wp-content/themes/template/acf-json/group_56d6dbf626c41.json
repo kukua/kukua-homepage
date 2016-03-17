@@ -245,6 +245,22 @@
                             "mime_types": ""
                         },
                         {
+                            "key": "field_56ea8b11a29d6",
+                            "label": "Is video?",
+                            "name": "modalbox",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0
+                        },
+                        {
                             "key": "field_56d6dd45c96c7",
                             "label": "Button text",
                             "name": "button_text",
@@ -272,7 +288,15 @@
                             "type": "text",
                             "instructions": "",
                             "required": 0,
-                            "conditional_logic": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_56ea8b11a29d6",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
                             "wrapper": {
                                 "width": "",
                                 "class": "",
@@ -285,6 +309,30 @@
                             "maxlength": "",
                             "readonly": 0,
                             "disabled": 0
+                        },
+                        {
+                            "key": "field_56ea8bde77cfb",
+                            "label": "Video URL",
+                            "name": "video",
+                            "type": "oembed",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_56ea8b11a29d6",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "width": "",
+                            "height": ""
                         }
                     ],
                     "min": "",
@@ -953,5 +1001,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1458210424
+    "modified": 1458212254
 }

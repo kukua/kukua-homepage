@@ -3,6 +3,7 @@
 
     kukua.onDomReady = function() {
 		kukua.matchHeight();
+		kukua.video();
     };
 
 	/**
@@ -10,7 +11,13 @@
 	 */
 	kukua.matchHeight = function() {
 		$(".js-match-height").matchHeight();
-	}
+	};
 
+	/**
+	 * Modal box with video
+	 */
+	kukua.video = function() {
+
+	};
 })(window.kukua = window.kukua || {});
 $(document).ready(kukua.onDomReady);
