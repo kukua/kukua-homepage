@@ -1,33 +1,64 @@
 	<div class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-3">
+				<div class="col-sm-3 col-xs-6 js-match-height">
 					<div class="u-text-center item">
-						<h4><i class="glyphicon glyphicon-map-marker"></i></h4>
-						<?= $footer->getStreet(); ?>,
-						<?= $footer->getPostalcode(); ?>,
-						<?= $footer->getCity(); ?><br>
-						The Netherlands
+						<div class="social">
+							<div class="icon">
+								<img src="<?= $base ; ?>/assets/img/map_icon.png" class="img-responsive">
+							</div>
+							<div class="text">
+								<?= $footer->getStreet(); ?>,
+								<?= $footer->getPostalcode(); ?>,
+								<?= $footer->getCity(); ?><br>
+								The Netherlands
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-sm-3 col-xs-6 js-match-height">
 					<div class="u-text-center item">
-						<h4><i class="glyphicon glyphicon-envelope"></i></h4>
-						<?= $footer->getEmail(); ?>
+						<div class="social">
+							<div class="icon">
+								<img src="<?= $base ; ?>/assets/img/email_icon.png" class="img-responsive">
+							</div>
+							<div class="text">
+								<?= $footer->getEmail(); ?>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-sm-3 col-xs-6 js-match-height">
 					<div class="u-text-center item">
-						<h4><i class="glyphicon glyphicon-earphone"></i></h4>
-						<?= $footer->getPhoneNumber(); ?>
+						<div class="social">
+							<div class="icon">
+								<img src="<?= $base ; ?>/assets/img/phone_icon.png" class="img-responsive">
+							</div>
+							<div class="text">
+								<?= $footer->getPhoneNumber(); ?>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-sm-3 col-xs-6 js-match-height">
 					<div class="u-text-center item">
-						<h4>F</h4>
-						<a href="<?= $footer->getFacebook(); ?>" target="_blank">Facebook</a><br>
-						<a href="<?= $footer->getLinkedin(); ?>" target="_blank">LinkedIn</a><br>
-						<a href="<?= $footer->getTwitter(); ?>" target="_blank">Twitter</a>
+						<div class="social">
+							<div class="icon">
+								<a href="<?= $footer->getFacebook(); ?>" target="_blank">
+									<img src="<?= $base ; ?>/assets/img/facebook_icon.png" class="img-responsive"></h4>
+								</a>
+							</div>
+							<div class="icon">
+								<a href="<?= $footer->getLinkedin(); ?>" target="_blank">
+									<img src="<?= $base ; ?>/assets/img/linkedin_icon.png" class="img-responsive"></h4>
+								</a>
+							</div>
+							<div class="icon">
+								<a href="<?= $footer->getTwitter(); ?>" target="_blank">
+									<img src="<?= $base ; ?>/assets/img/twitter_icon.png" class="img-responsive"></h4>
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

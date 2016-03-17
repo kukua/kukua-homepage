@@ -1,7 +1,7 @@
 <div class="text-image-vertical <?= isset($background) ? $background : ""; ?>">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-8 col-sm-offset-2">
+			<div class="col-sm-12">
 				<h2><?= $title; ?></h2>
 				<p><?=  $text;  ?></p>
 			</div>
@@ -15,7 +15,7 @@
 		</div>
 		<?php if ($button_link && $button_text): ?>
 			<div class="row">
-				<div class="col-sm-8 col-sm-offset-2">
+				<div class="col-sm-12">
 					<div class="button">
 						<a href="<?=$button_link;?>" class="btn btn-primary btn-lg"><?= $button_text; ?></a>
 					</div>

@@ -17,7 +17,9 @@
             },
             "choices": {
                 "primary": "Green",
-                "secondary": "Blue"
+                "secondary": "Blue",
+                "tertiary": "Brown",
+                "quatenary": "Black"
             },
             "default_value": [],
             "allow_null": 0,
@@ -1001,5 +1003,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1458212254
+    "modified": 1458221433
 }

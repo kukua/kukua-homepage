@@ -1,12 +1,12 @@
 <div class="text-image <?= isset($background) ? $background : ""; ?>">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-offset-2 col-sm-4">
+			<div class="col-sm-4">
 				<?php if ($image): ?>
 					<img src="<?= $image["url"]; ?>" class="img-responsive">
 				<?php endif; ?>
 			</div>
-			<div class="col-sm-3 col-sm-offset-2">
+			<div class="col-sm-6 col-sm-offset-2">
 				<h2><?= $title; ?></h2>
 				<p><?=  $text;  ?></p>
 			</div>
