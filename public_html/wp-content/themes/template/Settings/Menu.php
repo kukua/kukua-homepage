@@ -51,6 +51,7 @@ class Menu {
 		$args = [
 			'menu' => $menuId,
 			'container_class' => 'collapse navbar-collapse',
+			'container_id' => 'data-mobile-drop',
 			'menu_class' => 'nav navbar-nav navbar-right',
 			'depth' => 1,
 		];

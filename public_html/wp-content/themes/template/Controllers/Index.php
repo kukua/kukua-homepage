@@ -32,7 +32,8 @@ class Index extends AbstractController {
 	 * @access public
 	 * @return void
 	 */
-    public function index() {
+	public function index() {
+		the_post();
         $this->render("index/index");
 	}
 
@@ -43,6 +44,7 @@ class Index extends AbstractController {
 	 * @return void
 	 */
 	public function notFound() {
+		the_post();
 		$this->render("index/404");
 	}
 }
