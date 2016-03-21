@@ -37,11 +37,14 @@ class Article {
 	 */
 	public function populate($wpQuery) {
 		$this->title   = apply_filters("the_title", $wpQuery->post_title);
-		$this->subtitle= get_field("article_subtitle", $wpQuery->ID);
 		$this->content = apply_filters("the_content", $wpQuery->post_content);
 		$this->excerpt = wp_trim_words($wpQuery->post_content);
 		$this->link	   = get_the_permalink($wpQuery->ID);
-		$this->image   = get_field("article_image", $wpQuery->ID);
+
+		if (function_exists("get_field")) {
+			$this->subtitle= get_field("article_subtitle", $wpQuery->ID);
+			$this->image   = get_field("article_image", $wpQuery->ID);
+		}
 		return $this;
 	}
 

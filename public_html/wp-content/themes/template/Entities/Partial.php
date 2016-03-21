@@ -44,14 +44,16 @@ class Partial {
             return $return;
         }
 
-        $partials = get_field("partial", $params["p"]);
-        $validPartials = self::validatePartials($partials);
-        if ($validPartials !== true) {
-            return $return;
-        }
+		if (function_exists("get_field")) {
+			$partials = get_field("partial", $params["p"]);
+        	$validPartials = self::validatePartials($partials);
+        	if ($validPartials !== true) {
+        	    return $return;
+        	}
 
-        foreach($partials as $partial) {
-            $return[] = self::acfFieldsToObject($partial);
+        	foreach($partials as $partial) {
+        	    $return[] = self::acfFieldsToObject($partial);
+        	}
         }
 
         return $return;

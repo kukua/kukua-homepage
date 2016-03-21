@@ -41,14 +41,17 @@ class Footer {
 	public function __construct() {
 
 		$this->_title		= get_option("template_footer_title");
-		$this->_street		= get_field("street", "option");
-		$this->_postalcode	= get_field("postalcode", "option");
-		$this->_city		= get_field("city", "option");
-		$this->_email		= get_field("email", "option");
-		$this->_phone_number= get_field("phone_number", "option");
-		$this->_facebook	= get_field("facebook", "option");
-		$this->_twitter		= get_field("twitter", "option");
-		$this->_linkedin	= get_field("linkedin", "option");
+
+		if (function_exists("get_field")) {
+			$this->_street		= get_field("street", "option");
+			$this->_postalcode	= get_field("postalcode", "option");
+			$this->_city		= get_field("city", "option");
+			$this->_email		= get_field("email", "option");
+			$this->_phone_number= get_field("phone_number", "option");
+			$this->_facebook	= get_field("facebook", "option");
+			$this->_twitter		= get_field("twitter", "option");
+			$this->_linkedin	= get_field("linkedin", "option");
+		}
 
 		//check if saving, before any output started so we can redirect
 		if (isset($_POST["update_appearance_footer"])) {
@@ -58,7 +61,6 @@ class Footer {
 			}
 		}
 
-		$this->_street = get_field("street", "option");
 		add_action("admin_menu", array($this, "adminMenu"));
 	}
 
