@@ -414,13 +414,37 @@
                             "media_upload": 1
                         },
                         {
+                            "key": "field_56ebc88b2efcc",
+                            "label": "Chart",
+                            "name": "chart",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0
+                        },
+                        {
                             "key": "field_56e8242116c46",
                             "label": "Image",
                             "name": "image",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
-                            "conditional_logic": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_56ebc88b2efcc",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
                             "wrapper": {
                                 "width": "",
                                 "class": "",
@@ -1003,5 +1027,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1458221433
+    "modified": 1458298909
 }

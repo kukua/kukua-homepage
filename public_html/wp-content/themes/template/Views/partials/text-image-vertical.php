@@ -7,9 +7,13 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-offset-2 col-sm-8">
-				<?php if ($image): ?>
-					<img src="<?= $image["url"]; ?>" class="img-responsive">
+			<div class="col-sm-12">
+				<?php if ($chart): ?>
+					<div class="chart" id="chart" style="width:100%;height:500px;"></div>
+				<?php else: ?>
+					<?php if ($image): ?>
+						<img src="<?= $image["url"]; ?>" class="img-responsive">
+					<?php endif; ?>
 				<?php endif; ?>
 			</div>
 		</div>

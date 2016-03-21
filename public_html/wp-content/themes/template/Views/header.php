@@ -244,7 +244,7 @@
 					</svg>
 				</a>
 			</div>
-	
-			<?= \Template\Settings\Menu::render("header-menu"); ?>
+
+			<?= \Template\Settings\Menu::render("Primary"); ?>
 		</div>
 	</nav>

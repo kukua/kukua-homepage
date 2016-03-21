@@ -32,9 +32,10 @@ class Menu {
 
 		/* Register header menu */
 		add_action("init", function() {
-			register_nav_menu(
-				"header-menu", __("Header menu")
-			);
+			register_nav_menus([
+				"header-menu" => __("Header menu"),
+				"footer-menu" => __("Footer menu")
+			]);
 		});
 	}
 
@@ -51,6 +52,25 @@ class Menu {
 			'menu' => $menuId,
 			'container_class' => 'collapse navbar-collapse',
 			'menu_class' => 'nav navbar-nav navbar-right',
+			'depth' => 1,
+		];
+
+		wp_nav_menu($args);
+	}
+
+	/**
+	 * Render given navigation menu as list
+	 *
+	 * @static
+	 * @access	public
+	 * @param	string $menuId
+	 * @return	Menu
+	 */
+	public static function renderList($menuId) {
+		$args = [
+			'menu' => $menuId,
+			'container_class' => '',
+			'menu_class' => 'list-unstyled',
 			'depth' => 1,
 		];
 

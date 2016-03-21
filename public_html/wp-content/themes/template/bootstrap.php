@@ -58,7 +58,15 @@ class Init {
 	 * @access public
 	 * @return void
 	 */
-    public function initWordPress() {
+	public function initWordPress() {
+
+		if ($_POST) {
+			if (isset($_GET["sensordata"]) && $_GET["sensordata"] == "get") {
+				(new \Template\Controllers\Sensordata())->get();
+				exit;
+			}
+		}
+
 		(new \Template\Settings\Defaults());
 		(new \Template\Settings\Menu());
 		(new \Template\Settings\Footer());

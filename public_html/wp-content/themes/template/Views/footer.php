@@ -8,8 +8,20 @@
 								<img src="<?= $base ; ?>/assets/img/map_icon.png" class="img-responsive">
 							</div>
 							<div class="text">
+								<?= \Template\Settings\Menu::renderList("footer-menu"); ?>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-6 js-match-height">
+					<div class="u-text-center item">
+						<div class="social">
+							<div class="icon">
+								<img src="<?= $base ; ?>/assets/img/map_icon.png" class="img-responsive">
+							</div>
+							<div class="text">
 								<?= $footer->getStreet(); ?>,
-								<?= $footer->getPostalcode(); ?>,
+								<?= $footer->getPostalcode(); ?><br>
 								<?= $footer->getCity(); ?><br>
 								The Netherlands
 							</div>
@@ -23,18 +35,7 @@
 								<img src="<?= $base ; ?>/assets/img/email_icon.png" class="img-responsive">
 							</div>
 							<div class="text">
-								<?= $footer->getEmail(); ?>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3 col-xs-6 js-match-height">
-					<div class="u-text-center item">
-						<div class="social">
-							<div class="icon">
-								<img src="<?= $base ; ?>/assets/img/phone_icon.png" class="img-responsive">
-							</div>
-							<div class="text">
+								<?= $footer->getEmail(); ?><br>
 								<?= $footer->getPhoneNumber(); ?>
 							</div>
 						</div>
