@@ -5,7 +5,7 @@
 		$backgroundCss = "background-image:
 			url('" . $article->image["url"] . "');";
 	endif; ?>
-	
+
 	<article class="articles">
 		<header class="hero small" style="<?= $backgroundCss; ?>">
 			<div class="container">
@@ -25,7 +25,7 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-8 col-sm-offset-2">
-						<a href="/blog" class="btn btn-info btn-xs">&laquo; Back</a>
+						<a href="/blog" class="btn btn-infk">&laquo; Back</a>
 					</div>
 				</div>
 			</div>

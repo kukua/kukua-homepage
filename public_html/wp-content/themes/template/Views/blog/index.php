@@ -32,7 +32,7 @@
 			<div class="row">
 				<div class="col-sm-4 col-sm-offset-4">
 					<div class="signup">
-						<a href="/sign-up/" class="btn btn-default btn-block">Sign up</a>
+						<a href="/sign-up/" class="btn btn-warning btn-block">Sign up</a>
 					</div>
 				</div>
 			</div>
