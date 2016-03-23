@@ -24,16 +24,8 @@ nginx:
         - hhvm
     command: /etc/nginx/start.sh
 mysql:
-    image: tutum/mysql:5.6
+    image: mariadb:10.1
     container_name: web_mysql
     env_file: .env
     ports:
         - "3306:3306"
-phpmyadmin:
-    image: phpmyadmin/phpmyadmin
-    container_name: web_myadmin
-    env_file: .env
-    ports:
-        - "8080:80"
-    links:
-        - mysql
