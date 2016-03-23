@@ -6,7 +6,7 @@
 				<div class="partner__container">
 					<?php foreach ($partners as $i => $partner): ?>
 						<div class="partner__image">
-							<img src="<?=$partner["image"]["url"]; ?>" class="img-responsive">
+							<a href="<?=$partner["url"];?>" target="_blank"><img src="<?=$partner["image"]["url"]; ?>" class="img-responsive"></a>
 						</div>
 					<?php endforeach; ?>
 				</div>

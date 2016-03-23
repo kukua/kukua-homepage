@@ -1,10 +1,23 @@
 .wpcf7 {
-	.wpcf7-text {
+
+	.wpcf7-not-valid-tip {
+		color: #f00;
+	}
+
+	.screen-reader-response, .wpcf7-validation-errors {
+		display: none;
+	}
+
+	.wpcf7-text, .wpcf7-textarea {
 		.form-control();
 	}
 	.wpcf7-submit {
 		font-weight: normal;
 		.btn();
 		.btn-primary();
+	}
+
+	.wpcf7-textarea {
+		height: 100px;
 	}
 }
