@@ -1164,6 +1164,83 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                {
+                    "key": "56fba1ffa9cf9",
+                    "name": "donate",
+                    "label": "Donate",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_56fba1ffa9cfa",
+                            "label": "Background color",
+                            "name": "background",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "primary": "Green",
+                                "secondary": "Blue",
+                                "tertiary": "Brown",
+                                "quatenary": "Black"
+                            },
+                            "default_value": [],
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "disabled": 0,
+                            "readonly": 0
+                        },
+                        {
+                            "key": "field_56fba1ffa9cfb",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_56fba1ffa9cfc",
+                            "label": "Text (left)",
+                            "name": "text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             ]
         }
@@ -1200,5 +1277,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1458740888
+    "modified": 1459331728
 }
