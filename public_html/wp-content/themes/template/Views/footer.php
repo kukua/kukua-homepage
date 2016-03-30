@@ -66,7 +66,7 @@
     	    <div class="row">
     	        <div class="col-xs-12">
     	            <div class="u-text-center">
-    	                &copy; <?php echo date('Y'); ?> <a href="http://www.kukua.cc">kukua.cc</a>
+    	                &copy; 2012 - <?php echo date('Y'); ?> <a href="http://www.kukua.cc">kukua.cc</a>
     	            </div>
     	        </div>
     	    </div>
