@@ -8,19 +8,20 @@
 			</div>
 		</div>
 
-		<div class="row">
-			<?php foreach($icons as $i => $icon): ?>
-				<?php if ($i %3 == 0): ?>
+		<?php if ($icons) : ?>
+			<div class="row">
+				<?php foreach($icons as $i => $icon): ?>
+					<?php if ($i %3 == 0): ?>
+						</div>
+						<div class="row">
+					<?php endif; ?>
+
+					<div class="col-sm-4">
+						<h4 class="icon__title"><?= $icon["title"]; ?></h4>
+						<p class="icon__image"><img src="<?= $icon["icon"]["url"]; ?>" class="img-responsive"></p>
 					</div>
-					<div class="row">
-				<?php endif; ?>
-
-				<div class="col-sm-4">
-					<h4 class="icon__title"><?= $icon["title"]; ?></h4>
-					<p class="icon__image"><img src="<?= $icon["icon"]["url"]; ?>" class="img-responsive"></p>
-				</div>
-
-			<?php endforeach; ?>
-		</div>
+				<?php endforeach; ?>
+			</div>
+		<?php endif; ?>
 	</div>
 </div>
