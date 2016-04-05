@@ -2,10 +2,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3 col-xs-6 js-match-height">
-					<div class="u-text-center item">
+					<div class="u-text-left item">
 						<div class="social">
 							<div class="icon">
-								<img src="<?= $base ; ?>/assets/img/map_icon.png" class="img-responsive">
 							</div>
 							<div class="text">
 								<?= \Template\Settings\Menu::renderList("footer-menu"); ?>
@@ -17,7 +16,7 @@
 					<div class="u-text-center item">
 						<div class="social">
 							<div class="icon">
-								<img src="<?= $base ; ?>/assets/img/map_icon.png" class="img-responsive">
+								<img src="<?= $base ; ?>/assets/icons/grocerystore.svg" class="img-responsive">
 							</div>
 							<div class="text">
 								<?= $footer->getStreet(); ?>,
@@ -32,7 +31,7 @@
 					<div class="u-text-center item">
 						<div class="social">
 							<div class="icon">
-								<img src="<?= $base ; ?>/assets/img/email_icon.png" class="img-responsive">
+								<img src="<?= $base ; ?>/assets/icons/mail.svg" class="img-responsive">
 							</div>
 							<div class="text">
 								<?= $footer->getEmail(); ?><br>
