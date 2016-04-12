@@ -94,7 +94,7 @@ class AbstractController {
     protected function _viewPaths() {
         $this->data["base"]   = Constants::DIR_BASE;
         $this->data["assets"] = Constants::DIR_ASSETS;
-        $this->data["views"]  = Constants::DIR_VIEWS;
+		$this->data["views"]  = Constants::DIR_VIEWS;
 	}
 
 	/**

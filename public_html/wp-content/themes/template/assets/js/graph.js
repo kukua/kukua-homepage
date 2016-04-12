@@ -24,11 +24,7 @@
 	 */
 	graph.render = function(container, jsonUrl, options) {
 		var postdata = {
-			'country': '1',
-			'type': '1',
-			'from': '1454281200',
-			'to': '1454885999',
-			'interval': '1h'
+			'type': '1'
 		}
 
 		var call = $.ajax({

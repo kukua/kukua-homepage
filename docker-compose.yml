@@ -7,6 +7,7 @@ hhvm:
         - ./public_html/:/data
     links:
         - mysql
+    privileged: true
 nginx:
     image: nginx
     container_name: web_nginx

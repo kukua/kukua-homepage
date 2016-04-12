@@ -45,17 +45,22 @@
 						<div class="social">
 							<div class="icon">
 								<a href="<?= $footer->getFacebook(); ?>" target="_blank">
-									<img src="<?= $base ; ?>/assets/img/facebook_icon.png" class="img-responsive"></h4>
+									<img src="<?= $base ; ?>/assets/img/facebook_icon.png" class="img-responsive">
 								</a>
 							</div>
 							<div class="icon">
 								<a href="<?= $footer->getLinkedin(); ?>" target="_blank">
-									<img src="<?= $base ; ?>/assets/img/linkedin_icon.png" class="img-responsive"></h4>
+									<img src="<?= $base ; ?>/assets/img/linkedin_icon.png" class="img-responsive">
 								</a>
 							</div>
 							<div class="icon">
 								<a href="<?= $footer->getTwitter(); ?>" target="_blank">
-									<img src="<?= $base ; ?>/assets/img/twitter_icon.png" class="img-responsive"></h4>
+									<img src="<?= $base ; ?>/assets/img/twitter_icon.png" class="img-responsive">
+								</a>
+							</div>
+							<div class="icon">
+								<a href="http://www.github.com/kukua" target="_blank">
+									<img src="<?= $base ; ?>/assets/img/github_icon.png" class="img-responsive">
 								</a>
 							</div>
 						</div>

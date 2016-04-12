@@ -24,24 +24,12 @@ require_once(\Template\Bootstrap\Init::$root . "../../../vendor/autoload.php");
 
 class Sensordata extends AbstractController {
 
-	private $_token;
-	private $_url;
-	private $_port;
-	private $_db;
-	private $_suffix;
-
 	/**
 	 * @access public
 	 * @return void
 	 */
     public function __construct() {
 		parent::__construct();
-
-		$this->_token  = "cm9vdDo2NjhiYjg1NDVjYmM2MTE1ZWY0Yjk1OTYz";
-		$this->_url = "http://d.kukua.cc";
-		$this->_port = ":9003";
-		$this->_db = "data";
-		$this->_suffix = "/query";
     }
 
 	/**
@@ -52,11 +40,11 @@ class Sensordata extends AbstractController {
 	 */
 	public function get() {
 		$data = [
-			"country"	=> $_POST["country"],
+			"country"	=> 1,
 			"type"		=> $_POST["type"],
-			"dateFrom"	=> $_POST["from"],
-			"dateTo"	=> $_POST["to"],
-			"interval"	=> $_POST["interval"]
+			"dateFrom"	=> "1454281200",
+			"dateTo"	=> "1454885999",
+			"interval"	=> "1h"
 		];
 
 		$result = $this->_call($data);
@@ -70,7 +58,7 @@ class Sensordata extends AbstractController {
 	 */
 	protected function _call($data = Array()) {
 		$curl = new \Curl\Curl();
-		$curl->post("http://dashboard.kukua.cc/api/sensordata/get",
+		$curl->post("https://dashboard.kukua.cc/api/sensordata/get",
 			$data
 		);
 		return $curl->response;
