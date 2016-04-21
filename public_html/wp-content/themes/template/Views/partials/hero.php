@@ -18,12 +18,20 @@ endif; ?>
 			</div>
 		</div>
 		<?php if ($eu_reference): ?>
-			<div class="eu_reference clearfix">
-				<div class="image">
-					<img src="<?=get_template_directory_uri(); ?>/assets/img/eu-logo.png" class="img-responsive">
-				</div>
-				<div class="content">
-					Kukua has received a grant from the European Union to roll out an initial 70 weather stations in Nigeria.
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="eu_reference clearfix">
+						<table>
+							<tr>
+								<td>
+									<img src="<?=get_template_directory_uri(); ?>/assets/img/eu-logo.png">
+								</td>
+								<td>
+									Kukua has received a grant from the European Union to roll out an initial 70 weather stations in Nigeria.
+								</td>
+							</tr>
+						</table>
+					</div>
 				</div>
 			</div>
 		<?php endif; ?>

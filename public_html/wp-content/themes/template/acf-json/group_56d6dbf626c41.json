@@ -151,7 +151,7 @@
                             "name": "eu_reference",
                             "type": "true_false",
                             "instructions": "",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -669,7 +669,7 @@
                 {
                     "key": "56e8147c3c662",
                     "name": "image-icons",
-                    "label": "Image - icons",
+                    "label": "Background image + text",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -725,10 +725,10 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_56e814a13c66c",
-                            "label": "Icons",
-                            "name": "icons",
-                            "type": "repeater",
+                            "key": "field_57189b430b2a4",
+                            "label": "Text",
+                            "name": "text",
+                            "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -737,58 +737,10 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "collapsed": "",
-                            "min": "",
-                            "max": "",
-                            "layout": "table",
-                            "button_label": "Add Row",
-                            "sub_fields": [
-                                {
-                                    "key": "field_56e814b83c66d",
-                                    "label": "Title",
-                                    "name": "title",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": "",
-                                    "readonly": 0,
-                                    "disabled": 0
-                                },
-                                {
-                                    "key": "field_56e814c03c66e",
-                                    "label": "Icon",
-                                    "name": "icon",
-                                    "type": "image",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "return_format": "array",
-                                    "preview_size": "thumbnail",
-                                    "library": "all",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": ""
-                                }
-                            ]
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1
                         }
                     ],
                     "min": "",
@@ -1257,6 +1209,65 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                {
+                    "key": "57189feb7eaba",
+                    "name": "fundraising",
+                    "label": "Fundraising",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_57189feb7eabb",
+                            "label": "Background color",
+                            "name": "background",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "primary": "Green",
+                                "secondary": "Blue",
+                                "tertiary": "Brown",
+                                "quatenary": "Black"
+                            },
+                            "default_value": [],
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "disabled": 0,
+                            "readonly": 0
+                        },
+                        {
+                            "key": "field_57189feb7eabc",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             ]
         }
@@ -1293,5 +1304,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1461227334
+    "modified": 1461231810
 }
