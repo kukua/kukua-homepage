@@ -13,7 +13,7 @@
 						<li>Budget: $160,000</li>
 						<li>Duration: 6 months</li>
 					</ul>
-					<a href="javascript:;">Download</a>
+					<a href="mailto:tom@kukua.cc">Contact</a>
 				</div>
 				<div class="block color-section-2">
 					<h4>Ghana</h4>
@@ -26,7 +26,7 @@
 						<li>Budget: $160,000</li>
 						<li>Duration: 6 months</li>
 					</ul>
-					<a href="javascript:;">Download</a>
+					<a href="mailto:tom@kukua.cc">Contact</a>
 				</div>
 				<div class="block color-section-3">
 					<h4>Nigeria<small>Funded EU</small></h4>
@@ -39,7 +39,7 @@
 						<li>Budget: $100,000</li>
 						<li>Duration: 4 months</li>
 					</ul>
-					<a href="javascript:;">Download</a>
+					<a href="<?=get_template_directory_uri(); ?>/assets/docs/nigeria.pdf" target="_blank">Download</a>
 				</div>
 			</div>
 			<div class="col-sm-9 img-box">
@@ -59,7 +59,7 @@
 						<li>Budget: $240,000</li>
 						<li>Duration: 12 months</li>
 					</ul>
-					<a href="javascript:;">Download</a>
+					<a href="<?= get_template_directory_uri(); ?>/assets/docs/nigeria-north.pdf" target="_blank">Download</a>
 				</div>
 			</div>
 			<div class="col-sm-3">
@@ -74,7 +74,7 @@
 						<li>Budget: $160,000</li>
 						<li>Duration: 6 months</li>
 					</ul>
-					<a href="javascript:;">Download</a>
+					<a href="<?=get_template_directory_uri(); ?>/assets/docs/nigeria-south.pdf" target="_blank">Download</a>
 				</div>
 			</div>
 			<div class="col-sm-3">
@@ -89,7 +89,7 @@
 						<li>Budget: $240,000</li>
 						<li>Duration: 12 months</li>
 					</ul>
-					<a href="javascript:;">Download</a>
+					<a href="<?=get_template_directory_uri(); ?>/assets/docs/rwanda.pdf" target="_blank">Download</a>
 				</div>
 			</div>
 			<div class="col-sm-3">
@@ -104,7 +104,7 @@
 						<li>Budget: $400,000</li>
 						<li>Duration: 12 months</li>
 					</ul>
-					<a href="javascript:;">Download</a>
+					<a href="<?=get_template_directory_uri(); ?>/assets/docs/tanzania.pdf" target="_blank">Download</a>
 				</div>
 			</div>
 		</div>
