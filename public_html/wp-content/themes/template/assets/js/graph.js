@@ -38,22 +38,16 @@
 		})
 
 		call.done(function(request) {
-			var result = new Array()
-			if (request != null) {
-				$.each(request, function(id, station) {
-					var data  = new Object()
-					data.name = station.name
-					data.data = []
-					$.each(station.values, function(key, value) {
-						data.data.push(value)
-					})
-					result.push(data)
-				})
+			var result = []
+			options.series = [];
+			if (request != null && request.length > 0) {
+				options.series = request;
 			}
 
-			options.series = result
+			//Combine given options with default options
 			var opt = $.extend({}, graph.getOptions(), options)
 
+			//render
 			$(container).highcharts(opt)
 		})
 	}

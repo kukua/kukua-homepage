@@ -40,8 +40,8 @@ class Sensordata extends AbstractController {
 	 */
 	public function get() {
 		$data = [
-			"country"	=> 1,
-			"type"		=> $_POST["type"],
+			"region"	=> 1,
+			"type"		=> "Temperature",
 			"dateFrom"	=> "1454281200",
 			"dateTo"	=> "1454885999",
 			"interval"	=> "1h"
@@ -54,10 +54,12 @@ class Sensordata extends AbstractController {
 
 	/**
 	 * @access protected
+	 * @param  Array $data
 	 * @return Curl::response
 	 */
 	protected function _call($data = Array()) {
 		$curl = new \Curl\Curl();
+		$curl->setOpt(CURLOPT_SSL_VERIFYPEER, false);
 		$curl->post("https://dashboard.kukua.cc/api/sensordata/get",
 			$data
 		);

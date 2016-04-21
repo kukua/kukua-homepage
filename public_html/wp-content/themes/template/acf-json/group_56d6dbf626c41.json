@@ -144,6 +144,22 @@
                             "maxlength": "",
                             "readonly": 0,
                             "disabled": 0
+                        },
+                        {
+                            "key": "field_57188f253e79f",
+                            "label": "EU Reference",
+                            "name": "eu_reference",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0
                         }
                     ],
                     "min": "",
@@ -1277,5 +1293,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1459331728
+    "modified": 1461227334
 }
