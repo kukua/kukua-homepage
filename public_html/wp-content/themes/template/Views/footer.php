@@ -60,7 +60,7 @@
 							</div>
 							<div class="icon">
 								<a href="http://www.github.com/kukua" target="_blank">
-									<img src="<?= $base ; ?>/assets/img/github_icon.png" class="img-responsive">
+									<img src="<?= $base ; ?>/assets/img/github_icon.png" class="img-responsive" style="opacity:0.5">
 								</a>
 							</div>
 						</div>
