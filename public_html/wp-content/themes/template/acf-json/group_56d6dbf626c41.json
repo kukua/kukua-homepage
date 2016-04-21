@@ -351,6 +351,47 @@
                             },
                             "width": "",
                             "height": ""
+                        },
+                        {
+                            "key": "field_5718a8a080d55",
+                            "label": "Button text 2",
+                            "name": "button_text_2",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_5718a8af80d56",
+                            "label": "Button link 2",
+                            "name": "button_link_2",
+                            "type": "page_link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "page"
+                            ],
+                            "taxonomy": [],
+                            "allow_null": 0,
+                            "multiple": 0
                         }
                     ],
                     "min": "",
@@ -1304,5 +1345,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1461231810
+    "modified": 1461233866
 }

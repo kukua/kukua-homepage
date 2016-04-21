@@ -11,6 +11,10 @@
 						<?php else: ?>
 							<a href="<?=$button_link;?>" class="btn btn-primary btn-lg"><?= $button_text; ?></a>
 						<?php endif; ?>
+
+						<?php if ($button_link_2): ?>
+							<a href="<?=$button_link_2;?>" class="btn btn-primary btn-lg"><?= $button_text_2; ?></a>
+						<?php endif; ?>
 					</div>
 				<?php endif; ?>
 			</div>
