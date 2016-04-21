@@ -1311,6 +1311,44 @@
                     "max": ""
                 },
                 {
+                    "key": "5718d5482c144",
+                    "name": "crops",
+                    "label": "Crops",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5718d5482c145",
+                            "label": "Background color",
+                            "name": "background",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "primary": "Green",
+                                "secondary": "Blue",
+                                "tertiary": "Brown",
+                                "quatenary": "Black"
+                            },
+                            "default_value": [],
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "disabled": 0,
+                            "readonly": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
                     "key": "5718aa30dfc51",
                     "name": "how-what-who",
                     "label": "Why how what?",
@@ -1563,5 +1601,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1461234467
+    "modified": 1461245267
 }

@@ -1,0 +1,29 @@
+.crops {
+	padding-top: @spacing-half;
+	padding-bottom: @spacing-double;
+	background-color: @brand-quatenary;
+	background-image: url('/wp-content/themes/template/assets/img/farmer_crops_box.jpg');
+	background-size: cover;
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+
+	h1 {
+		color: @light-color;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	ul {
+		padding-left: 16px;
+		li {
+			color: @light-color;
+			padding: 6px 0;
+			font-size: ceil((@font-size-base * 1.25));
+		}
+	}
+	@media (max-width: @screen-sm) {
+		ul {
+			text-align: center;
+			list-style: none;
+		}
+	}
+}
