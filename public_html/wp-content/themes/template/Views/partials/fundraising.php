@@ -39,7 +39,7 @@
 						<li>Budget: $100,000</li>
 						<li>Duration: 4 months</li>
 					</ul>
-					<a href="<?=get_template_directory_uri(); ?>/assets/docs/nigeria.pdf" target="_blank">Download</a>
+					<a href="mailto:tom@kukua.cc">Contact</a>
 				</div>
 			</div>
 			<div class="col-sm-9 img-box">
