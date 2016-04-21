@@ -9,7 +9,7 @@ hhvm:
         - mysql
     privileged: true
 nginx:
-    image: nginx
+    image: nginx:1.9.7
     container_name: web_nginx
     ports:
         - "80:80"
