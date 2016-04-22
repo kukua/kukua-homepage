@@ -7,7 +7,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="<?= $base ?>/assets/dist/main.min.css">
 
-	<meta property="og:image" content="<?= get_template_directory_uri(); ?>/assets/img/kukua-logo.png">
+	<meta property="og:image" content="<?= get_template_directory_uri(); ?>/assets/img/kukua-logo.jpg">
 	<meta property="og:title" content="Kukua weather services">
 	<meta property="og:description" content="Innovatively providing accurate and real-time weather information to the African continent, by installing automatic weather stations.">
 	<meta property="og:url" content="https://www.kukua.cc">
