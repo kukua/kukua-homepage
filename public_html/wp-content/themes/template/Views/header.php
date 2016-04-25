@@ -6,12 +6,19 @@
 	<title><?= $pageTitle ?></title>
 	<link href='https://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="<?= $base ?>/assets/dist/main.min.css">
+	<link rel="shortcut icon" href="<?= get_template_directory_uri(); ?>/assets/icons/favicon.ico" type="image/x-icon" />
+
+	<link rel="apple-touch-icon" href="<?= get_template_directory_uri(); ?>/assets/icons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="<?= get_template_directory_uri(); ?>/assets/icons/apple-touch-icon-74x74.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="<?= get_template_directory_uri(); ?>/assets/icons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="<?= get_template_directory_uri(); ?>/assets/icons/apple-touch-icon-114x114.png">
 
 	<meta property="og:image" content="<?= get_template_directory_uri(); ?>/assets/img/kukua-logo.jpg">
 	<meta property="og:title" content="Kukua weather services">
 	<meta property="og:description" content="Innovatively providing accurate and real-time weather information to the African continent, by installing automatic weather stations.">
 	<meta property="og:url" content="https://www.kukua.cc">
 	<meta property="og:type" content="website">
+
 </head>
 <body>
 	<script>
