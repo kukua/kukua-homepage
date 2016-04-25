@@ -5,6 +5,7 @@
 	background-repeat: no-repeat;
 	border-bottom: 2px solid;
 	h1 {
+		font-size: 30px;
 		font-weight: 700;
 		text-transform: uppercase;
 		color: @light-color;
@@ -38,5 +39,11 @@
 			width: 80px;
 			margin-right: 10px;
 		}
+	}
+}
+
+@media (min-width: @screen-sm-min) {
+	.hero h1 {
+		font-size: 36px;
 	}
 }
