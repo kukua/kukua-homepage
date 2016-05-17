@@ -13,7 +13,7 @@
 			</div>
 			<div class="col-sm-3">
 				<h2>Awards</h2>
-				<img src="<?=get_template_directory_uri(); ?>/assets/img/iwillaward.png" class="img-responsive">
+				<a href="http://www.rsm.nl/i-will/i-will-award/edition-2016/" target="_blank"><img src="<?=get_template_directory_uri(); ?>/assets/img/iwillaward.png" class="img-responsive"></a>
 			</div>
 		</div>
 	</div>
