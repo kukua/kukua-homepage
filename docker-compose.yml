@@ -33,3 +33,16 @@ mysql:
         MYSQL_HOST:
     ports:
         - "3306:3306"
+ftp:
+    image: bogem/ftp
+    ports:
+        - "20:20"
+        - "21:21"
+        - "47400-47470:47400-47470"
+    environment:
+        FTP_USER: wordpress
+        FTP_PASS: updatemeNOW!
+        PASV_ADDRESS: 52.49.165.117
+    volumes:
+        - ./public_html/:/home/vsftpd
+    restart: never
