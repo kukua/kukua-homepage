@@ -18,15 +18,17 @@
  * @package WordPress
  */
 
+require(".wpenv");
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'website');
+define('DB_NAME', MYSQL_DATABASE);
 
 /** MySQL database username */
-define('DB_USER', 'admin');
+define('DB_USER', MYSQL_USER);
 
 /** MySQL database password */
-define('DB_PASSWORD', 'admin');
+define('DB_PASSWORD', MYSQL_PASSWORD);
 
 /** MySQL hostname */
 define('DB_HOST', 'mysql');
@@ -81,6 +83,14 @@ $table_prefix  = 'wp_';
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define('WP_DEBUG', false);
+
+// Force HTTPS
+define('FORCE_SSL_ADMIN', true);
+
+if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)
+{
+      $_SERVER['HTTPS']='on';
+}
 
 /* That's all, stop editing! Happy blogging. */
 
